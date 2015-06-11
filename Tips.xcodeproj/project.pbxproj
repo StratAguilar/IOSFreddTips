@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		C525151E1B28D9DF00929479 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C525151D1B28D9DF00929479 /* AppDelegate.swift */; };
-		C52515201B28D9DF00929479 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C525151F1B28D9DF00929479 /* ViewController.swift */; };
 		C52515231B28D9DF00929479 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C52515211B28D9DF00929479 /* Main.storyboard */; };
 		C52515251B28D9DF00929479 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C52515241B28D9DF00929479 /* Images.xcassets */; };
 		C52515281B28D9DF00929479 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C52515261B28D9DF00929479 /* LaunchScreen.xib */; };
 		C52515341B28D9DF00929479 /* TipsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52515331B28D9DF00929479 /* TipsTests.swift */; };
+		C52515401B2901BB00929479 /* TipsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C525153F1B2901BB00929479 /* TipsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +29,13 @@
 		C52515181B28D9DF00929479 /* Tips.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tips.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C525151C1B28D9DF00929479 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C525151D1B28D9DF00929479 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C525151F1B28D9DF00929479 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C52515221B28D9DF00929479 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C52515241B28D9DF00929479 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C52515271B28D9DF00929479 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		C525152D1B28D9DF00929479 /* TipsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TipsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C52515321B28D9DF00929479 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C52515331B28D9DF00929479 /* TipsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsTests.swift; sourceTree = "<group>"; };
+		C525153F1B2901BB00929479 /* TipsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,8 +77,8 @@
 		C525151A1B28D9DF00929479 /* Tips */ = {
 			isa = PBXGroup;
 			children = (
+				C525153F1B2901BB00929479 /* TipsViewController.swift */,
 				C525151D1B28D9DF00929479 /* AppDelegate.swift */,
-				C525151F1B28D9DF00929479 /* ViewController.swift */,
 				C52515211B28D9DF00929479 /* Main.storyboard */,
 				C52515241B28D9DF00929479 /* Images.xcassets */,
 				C52515261B28D9DF00929479 /* LaunchScreen.xib */,
@@ -161,6 +161,7 @@
 				TargetAttributes = {
 					C52515171B28D9DF00929479 = {
 						CreatedOnToolsVersion = 6.3.2;
+						DevelopmentTeam = RAK82466YH;
 					};
 					C525152C1B28D9DF00929479 = {
 						CreatedOnToolsVersion = 6.3.2;
@@ -212,7 +213,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C52515201B28D9DF00929479 /* ViewController.swift in Sources */,
+				C52515401B2901BB00929479 /* TipsViewController.swift in Sources */,
 				C525151E1B28D9DF00929479 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -342,9 +343,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Tips/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -352,9 +356,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Tips/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
