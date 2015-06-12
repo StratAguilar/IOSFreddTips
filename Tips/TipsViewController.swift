@@ -9,27 +9,53 @@
 import UIKit
 
 class TipsViewController: UIViewController {
+    
+    var fredd = FredCalculator()
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBOutlet weak var checkAmountTextField: UITextField!
+    @IBOutlet weak var tipAmountLabel: UILabel!
+    @IBOutlet weak var freddNumberLabel: UILabel!
+    @IBOutlet weak var friendlyButtonOutlet: UIButton!
+    @IBOutlet weak var checkupButtonOutlet: UIButton!
+    @IBOutlet weak var exactOrderButtonOutlet: UIButton!
+    @IBOutlet weak var desiredTempButtonOutlet: UIButton!
+    @IBOutlet weak var drinkRefillButtonOutlet: UIButton!
+    
+    @IBAction func friendlyButton(sender: UIButton) {
+        buttonTogglePress(friendlyButtonOutlet)
+        fredd.toggleFriendly()
+        fredd.calculateTip()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func checkupButton(sender: UIButton) {
+        buttonTogglePress(checkupButtonOutlet)
+        fredd.toggleRegularCheck()
+        fredd.calculateTip()
     }
-    */
+    
+    @IBAction func exactOrderButton(sender: UIButton) {
+        buttonTogglePress(exactOrderButtonOutlet)
+        fredd.toggleExactOrder()
+        fredd.calculateTip()
+    }
+    
+    @IBAction func desiredTempButton(sender: UIButton) {
+        buttonTogglePress(desiredTempButtonOutlet)
+        fredd.toggleDesiredTemp()
+        fredd.calculateTip()
+    }
 
+    @IBAction func drinkRefillButton(sender: UIButton) {
+        buttonTogglePress(drinkRefillButtonOutlet)
+        fredd.toggleDrinkRefill()
+        fredd.calculateTip()
+    }
+    
+    func buttonTogglePress(button: UIButton){
+        if button.titleLabel?.text == "✔︎" {
+            button.setTitle("✘", forState: UIControlState.Normal)
+        }else{
+            button.setTitle("✔︎", forState: UIControlState.Normal)
+        }
+    }
 }

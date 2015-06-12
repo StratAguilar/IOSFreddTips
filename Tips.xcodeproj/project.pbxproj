@@ -13,6 +13,7 @@
 		C52515281B28D9DF00929479 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C52515261B28D9DF00929479 /* LaunchScreen.xib */; };
 		C52515341B28D9DF00929479 /* TipsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52515331B28D9DF00929479 /* TipsTests.swift */; };
 		C52515401B2901BB00929479 /* TipsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C525153F1B2901BB00929479 /* TipsViewController.swift */; };
+		C52515441B2A2D8D00929479 /* FredCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52515431B2A2D8D00929479 /* FredCalculator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		C52515321B28D9DF00929479 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C52515331B28D9DF00929479 /* TipsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsTests.swift; sourceTree = "<group>"; };
 		C525153F1B2901BB00929479 /* TipsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipsViewController.swift; sourceTree = "<group>"; };
+		C52515431B2A2D8D00929479 /* FredCalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FredCalculator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		C525151A1B28D9DF00929479 /* Tips */ = {
 			isa = PBXGroup;
 			children = (
+				C52515431B2A2D8D00929479 /* FredCalculator.swift */,
 				C525153F1B2901BB00929479 /* TipsViewController.swift */,
 				C525151D1B28D9DF00929479 /* AppDelegate.swift */,
 				C52515211B28D9DF00929479 /* Main.storyboard */,
@@ -213,6 +216,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C52515441B2A2D8D00929479 /* FredCalculator.swift in Sources */,
 				C52515401B2901BB00929479 /* TipsViewController.swift in Sources */,
 				C525151E1B28D9DF00929479 /* AppDelegate.swift in Sources */,
 			);
