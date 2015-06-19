@@ -14,6 +14,8 @@
 		C52515341B28D9DF00929479 /* TipsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52515331B28D9DF00929479 /* TipsTests.swift */; };
 		C52515401B2901BB00929479 /* TipsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C525153F1B2901BB00929479 /* TipsViewController.swift */; };
 		C52515441B2A2D8D00929479 /* FredCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52515431B2A2D8D00929479 /* FredCalculator.swift */; };
+		C52515461B2B7D0900929479 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C52515451B2B7D0900929479 /* iAd.framework */; };
+		C52515481B30B97400929479 /* DoubleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52515471B30B97400929479 /* DoubleExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,8 @@
 		C52515331B28D9DF00929479 /* TipsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsTests.swift; sourceTree = "<group>"; };
 		C525153F1B2901BB00929479 /* TipsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipsViewController.swift; sourceTree = "<group>"; };
 		C52515431B2A2D8D00929479 /* FredCalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FredCalculator.swift; sourceTree = "<group>"; };
+		C52515451B2B7D0900929479 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		C52515471B30B97400929479 /* DoubleExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoubleExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C52515461B2B7D0900929479 /* iAd.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +66,7 @@
 		C525150F1B28D9DF00929479 = {
 			isa = PBXGroup;
 			children = (
+				C52515451B2B7D0900929479 /* iAd.framework */,
 				C525151A1B28D9DF00929479 /* Tips */,
 				C52515301B28D9DF00929479 /* TipsTests */,
 				C52515191B28D9DF00929479 /* Products */,
@@ -80,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				C52515431B2A2D8D00929479 /* FredCalculator.swift */,
+				C52515471B30B97400929479 /* DoubleExtensions.swift */,
 				C525153F1B2901BB00929479 /* TipsViewController.swift */,
 				C525151D1B28D9DF00929479 /* AppDelegate.swift */,
 				C52515211B28D9DF00929479 /* Main.storyboard */,
@@ -216,6 +223,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C52515481B30B97400929479 /* DoubleExtensions.swift in Sources */,
 				C52515441B2A2D8D00929479 /* FredCalculator.swift in Sources */,
 				C52515401B2901BB00929479 /* TipsViewController.swift in Sources */,
 				C525151E1B28D9DF00929479 /* AppDelegate.swift in Sources */,
@@ -353,6 +361,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -366,6 +375,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -422,6 +432,7 @@
 				C52515391B28D9DF00929479 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C525153A1B28D9DF00929479 /* Build configuration list for PBXNativeTarget "TipsTests" */ = {
 			isa = XCConfigurationList;
@@ -430,6 +441,7 @@
 				C525153C1B28D9DF00929479 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

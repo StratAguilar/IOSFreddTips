@@ -10,10 +10,11 @@ import Foundation
 
 class FredCalculator{
     
-    static private var tipBase: Double = 0.15
+    private var tipBase: Double = 0.15
     private var largeCrement: Double = 0.02
     private var mediumCrement: Double = 0.0075
     private var smallCrement: Double = 0.005
+    private var terribleService: Double = 0.05
     
     private var friendly: Bool = true
     private var regularCheck: Bool = true
@@ -21,8 +22,9 @@ class FredCalculator{
     private var desiredTemp: Bool = true
     private var drinkRefill: Bool = true
     private var billTotal: Double = 0.0
-    private var tipTotal: Double = tipBase
-    private var fredNumber: Int = 0
+    private var tipTotalPercent: Double = 0.15
+    private var freddNumber: Int = 0
+    private var tipTotal: Double = 0.00
     
     func toggleFriendly(){
         friendly = !friendly
@@ -42,39 +44,76 @@ class FredCalculator{
         drinkRefill = !drinkRefill
     }
     
-    func calculateTip(){
-        tipTotal = 0.15
+    func setBill(bill : Double){
+        billTotal = bill
+    }
+    
+    func calculateFreddNumber() -> Int {
+        return freddNumber
+    }
+    
+    func calculateTip() -> Double{
+        tipTotalPercent = tipBase
+        freddNumber = 0
+        var terrible : Bool = true
         
         if friendly {
-            tipTotal += largeCrement
-            fredNumber += Int(pow(2.0, 0.0))
+            tipTotalPercent += largeCrement
+            freddNumber += Int(pow(2.0, 0.0))
+            terrible = false
         }else{
-            tipTotal -= mediumCrement
+            tipTotalPercent -= mediumCrement
+            
         }
         if regularCheck {
-            tipTotal += mediumCrement
-            fredNumber += Int(pow(2.0, 1.0))
+            tipTotalPercent += mediumCrement
+            freddNumber += Int(pow(2.0, 1.0))
+            terrible = false
         }else{
-            tipTotal -= smallCrement
+            tipTotalPercent -= smallCrement
         }
         if exactOrder {
-            tipTotal += mediumCrement
-            fredNumber += Int(pow(2.0, 2.0))
+            tipTotalPercent += mediumCrement
+            freddNumber += Int(pow(2.0, 2.0))
+            terrible = false
         }else{
-            tipTotal -= smallCrement
+            tipTotalPercent -= smallCrement
         }
         if desiredTemp {
-            tipTotal += mediumCrement
-            fredNumber += Int(pow(2.0, 3.0))
+            tipTotalPercent += mediumCrement
+            freddNumber += Int(pow(2.0, 3.0))
+            terrible = false
         }else{
-            tipTotal -= smallCrement
+            tipTotalPercent -= smallCrement
         }
         if drinkRefill {
-            tipTotal += mediumCrement
-            fredNumber += Int(pow(2.0, 4.0))
+            tipTotalPercent += mediumCrement
+            freddNumber += Int(pow(2.0, 4.0))
+            terrible = false
         }else{
-            tipTotal -= smallCrement
+            tipTotalPercent -= smallCrement
         }
-        println(tipTotal)
+        if terrible {
+            tipTotalPercent = terribleService
+        }
+        
+        tipTotal = tipTotalPercent * billTotal
+        tipTotal = Double.roundToDecimalPlace(tipTotal, numberOfDecimalPlaces: 2)
+        
+        return tipTotal
+    }
+    
+    func calculateTotal() -> (Double, Double){
+        return (tipTotal, tipTotal + billTotal)
+    }
+    
+    func roundUp() -> (tip : Double, bill : Double){
+        if billTotal > 0
+        {
+            var roundedBillTotal : Double = ceil(tipTotal + billTotal)
+            var roundedTipTotal : Double = roundedBillTotal - billTotal
+            return (roundedTipTotal, roundedBillTotal)
+        }
+        return (0.0, 0.0)
     }
 }
