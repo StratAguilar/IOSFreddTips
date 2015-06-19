@@ -15,7 +15,7 @@ class FredCalculator{
     private var mediumCrement: Double = 0.0075
     private var smallCrement: Double = 0.005
     private var terribleService: Double = 0.05
-    
+    private var badService: Double = 0.08
     private var friendly: Bool = true
     private var regularCheck: Bool = true
     private var exactOrder: Bool = true
@@ -51,7 +51,9 @@ class FredCalculator{
     func calculateFreddNumber() -> Int {
         return freddNumber
     }
-    
+    func getTipTotal() -> Double {
+        return tipTotalPercent
+    }
     func calculateTip() -> Double{
         tipTotalPercent = tipBase
         freddNumber = 0
@@ -82,6 +84,9 @@ class FredCalculator{
         if desiredTemp {
             tipTotalPercent += mediumCrement
             freddNumber += Int(pow(2.0, 3.0))
+            if terrible{
+                tipTotalPercent = badService
+            }
             terrible = false
         }else{
             tipTotalPercent -= smallCrement
@@ -89,6 +94,9 @@ class FredCalculator{
         if drinkRefill {
             tipTotalPercent += mediumCrement
             freddNumber += Int(pow(2.0, 4.0))
+            if terrible{
+                tipTotalPercent = badService
+            }
             terrible = false
         }else{
             tipTotalPercent -= smallCrement

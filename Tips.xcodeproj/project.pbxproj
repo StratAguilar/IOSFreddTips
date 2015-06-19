@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C500BA321B34740200550C45 /* FredNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C500BA311B34740200550C45 /* FredNumberViewController.swift */; };
 		C525151E1B28D9DF00929479 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C525151D1B28D9DF00929479 /* AppDelegate.swift */; };
 		C52515231B28D9DF00929479 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C52515211B28D9DF00929479 /* Main.storyboard */; };
 		C52515251B28D9DF00929479 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C52515241B28D9DF00929479 /* Images.xcassets */; };
@@ -29,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C500BA311B34740200550C45 /* FredNumberViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FredNumberViewController.swift; sourceTree = "<group>"; };
 		C52515181B28D9DF00929479 /* Tips.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tips.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C525151C1B28D9DF00929479 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C525151D1B28D9DF00929479 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				C52515431B2A2D8D00929479 /* FredCalculator.swift */,
+				C500BA311B34740200550C45 /* FredNumberViewController.swift */,
 				C52515471B30B97400929479 /* DoubleExtensions.swift */,
 				C525153F1B2901BB00929479 /* TipsViewController.swift */,
 				C525151D1B28D9DF00929479 /* AppDelegate.swift */,
@@ -225,6 +228,7 @@
 			files = (
 				C52515481B30B97400929479 /* DoubleExtensions.swift in Sources */,
 				C52515441B2A2D8D00929479 /* FredCalculator.swift in Sources */,
+				C500BA321B34740200550C45 /* FredNumberViewController.swift in Sources */,
 				C52515401B2901BB00929479 /* TipsViewController.swift in Sources */,
 				C525151E1B28D9DF00929479 /* AppDelegate.swift in Sources */,
 			);

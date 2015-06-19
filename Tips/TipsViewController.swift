@@ -24,8 +24,8 @@ class TipsViewController: UIViewController, ADBannerViewDelegate, UITextFieldDel
     @IBOutlet weak var exactOrderButtonOutlet: UIButton!
     @IBOutlet weak var desiredTempButtonOutlet: UIButton!
     @IBOutlet weak var drinkRefillButtonOutlet: UIButton!
-    
     @IBOutlet weak var adBanner: ADBannerView!
+    @IBOutlet weak var tipPercentageLable: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -129,10 +129,13 @@ class TipsViewController: UIViewController, ADBannerViewDelegate, UITextFieldDel
         fredd.setBill((checkAmountTextField.text as NSString).doubleValue)
         fredd.calculateTip()
         (tip, total) = fredd.calculateTotal()
+        
+        var tipPercent : Double = fredd.getTipTotal() * 100
         freddNumberLabel.text = fredd.calculateFreddNumber().description
         totalAmountLabel.text = NSString(format: "%.2f", total) as String
         tipAmountLabel.text = NSString(format: "%.2f", tip) as String
-        
+        println(tipPercent)
+        tipPercentageLable.text = NSString(format: "%.2f%%", tipPercent) as String
     }
 
 }
