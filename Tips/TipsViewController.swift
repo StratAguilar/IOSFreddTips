@@ -134,8 +134,15 @@ class TipsViewController: UIViewController, ADBannerViewDelegate, UITextFieldDel
         freddNumberLabel.text = fredd.calculateFreddNumber().description
         totalAmountLabel.text = NSString(format: "%.2f", total) as String
         tipAmountLabel.text = NSString(format: "%.2f", tip) as String
-        println(tipPercent)
         tipPercentageLable.text = NSString(format: "%.2f%%", tipPercent) as String
+    }
+    func bannerView(banner: ADBannerView!, didFailToReceiveAdWithError error: NSError!) {
+        println("Banner failed to recieve ad with error \(error) -- end ")
+        if !banner.hidden
+        {
+            banner.hidden = true
+        }
+        
     }
 
 }
