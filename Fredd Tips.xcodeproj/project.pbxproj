@@ -31,13 +31,13 @@
 
 /* Begin PBXFileReference section */
 		C500BA311B34740200550C45 /* FredNumberViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FredNumberViewController.swift; sourceTree = "<group>"; };
-		C52515181B28D9DF00929479 /* Tips.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tips.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C52515181B28D9DF00929479 /* Fredd Tips.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fredd Tips.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C525151C1B28D9DF00929479 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C525151D1B28D9DF00929479 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C52515221B28D9DF00929479 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C52515241B28D9DF00929479 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C52515271B28D9DF00929479 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		C525152D1B28D9DF00929479 /* TipsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TipsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C525152D1B28D9DF00929479 /* Fredd TipsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Fredd TipsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C52515321B28D9DF00929479 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C52515331B28D9DF00929479 /* TipsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsTests.swift; sourceTree = "<group>"; };
 		C525153F1B2901BB00929479 /* TipsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipsViewController.swift; sourceTree = "<group>"; };
@@ -78,8 +78,8 @@
 		C52515191B28D9DF00929479 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C52515181B28D9DF00929479 /* Tips.app */,
-				C525152D1B28D9DF00929479 /* TipsTests.xctest */,
+				C52515181B28D9DF00929479 /* Fredd Tips.app */,
+				C525152D1B28D9DF00929479 /* Fredd TipsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -128,9 +128,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C52515171B28D9DF00929479 /* Tips */ = {
+		C52515171B28D9DF00929479 /* Fredd Tips */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C52515371B28D9DF00929479 /* Build configuration list for PBXNativeTarget "Tips" */;
+			buildConfigurationList = C52515371B28D9DF00929479 /* Build configuration list for PBXNativeTarget "Fredd Tips" */;
 			buildPhases = (
 				C52515141B28D9DF00929479 /* Sources */,
 				C52515151B28D9DF00929479 /* Frameworks */,
@@ -140,14 +140,14 @@
 			);
 			dependencies = (
 			);
-			name = Tips;
+			name = "Fredd Tips";
 			productName = Tips;
-			productReference = C52515181B28D9DF00929479 /* Tips.app */;
+			productReference = C52515181B28D9DF00929479 /* Fredd Tips.app */;
 			productType = "com.apple.product-type.application";
 		};
-		C525152C1B28D9DF00929479 /* TipsTests */ = {
+		C525152C1B28D9DF00929479 /* Fredd TipsTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C525153A1B28D9DF00929479 /* Build configuration list for PBXNativeTarget "TipsTests" */;
+			buildConfigurationList = C525153A1B28D9DF00929479 /* Build configuration list for PBXNativeTarget "Fredd TipsTests" */;
 			buildPhases = (
 				C52515291B28D9DF00929479 /* Sources */,
 				C525152A1B28D9DF00929479 /* Frameworks */,
@@ -158,9 +158,9 @@
 			dependencies = (
 				C525152F1B28D9DF00929479 /* PBXTargetDependency */,
 			);
-			name = TipsTests;
+			name = "Fredd TipsTests";
 			productName = TipsTests;
-			productReference = C525152D1B28D9DF00929479 /* TipsTests.xctest */;
+			productReference = C525152D1B28D9DF00929479 /* Fredd TipsTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -182,7 +182,7 @@
 					};
 				};
 			};
-			buildConfigurationList = C52515131B28D9DF00929479 /* Build configuration list for PBXProject "Tips" */;
+			buildConfigurationList = C52515131B28D9DF00929479 /* Build configuration list for PBXProject "Fredd Tips" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -195,8 +195,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C52515171B28D9DF00929479 /* Tips */,
-				C525152C1B28D9DF00929479 /* TipsTests */,
+				C52515171B28D9DF00929479 /* Fredd Tips */,
+				C525152C1B28D9DF00929479 /* Fredd TipsTests */,
 			);
 		};
 /* End PBXProject section */
@@ -247,7 +247,7 @@
 /* Begin PBXTargetDependency section */
 		C525152F1B28D9DF00929479 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = C52515171B28D9DF00929479 /* Tips */;
+			target = C52515171B28D9DF00929479 /* Fredd Tips */;
 			targetProxy = C525152E1B28D9DF00929479 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -363,7 +363,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Tips/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Fredd Tips";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -377,7 +377,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Tips/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Fredd Tips";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -397,8 +397,8 @@
 				);
 				INFOPLIST_FILE = TipsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tips.app/Tips";
+				PRODUCT_NAME = "Fredd TipsTests";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fredd Tips.app/Fredd Tips";
 			};
 			name = Debug;
 		};
@@ -412,15 +412,15 @@
 				);
 				INFOPLIST_FILE = TipsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tips.app/Tips";
+				PRODUCT_NAME = "Fredd TipsTests";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fredd Tips.app/Fredd Tips";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C52515131B28D9DF00929479 /* Build configuration list for PBXProject "Tips" */ = {
+		C52515131B28D9DF00929479 /* Build configuration list for PBXProject "Fredd Tips" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C52515351B28D9DF00929479 /* Debug */,
@@ -429,7 +429,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C52515371B28D9DF00929479 /* Build configuration list for PBXNativeTarget "Tips" */ = {
+		C52515371B28D9DF00929479 /* Build configuration list for PBXNativeTarget "Fredd Tips" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C52515381B28D9DF00929479 /* Debug */,
@@ -438,7 +438,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C525153A1B28D9DF00929479 /* Build configuration list for PBXNativeTarget "TipsTests" */ = {
+		C525153A1B28D9DF00929479 /* Build configuration list for PBXNativeTarget "Fredd TipsTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C525153B1B28D9DF00929479 /* Debug */,

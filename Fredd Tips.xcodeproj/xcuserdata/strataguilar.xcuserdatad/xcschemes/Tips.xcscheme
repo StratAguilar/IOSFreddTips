@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "C52515171B28D9DF00929479"
-               BuildableName = "Tips.app"
-               BlueprintName = "Tips"
-               ReferencedContainer = "container:Tips.xcodeproj">
+               BuildableName = "Fredd Tips.app"
+               BlueprintName = "Fredd Tips"
+               ReferencedContainer = "container:Fredd Tips.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -29,9 +29,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "C525152C1B28D9DF00929479"
-               BuildableName = "TipsTests.xctest"
-               BlueprintName = "TipsTests"
-               ReferencedContainer = "container:Tips.xcodeproj">
+               BuildableName = "Fredd TipsTests.xctest"
+               BlueprintName = "Fredd TipsTests"
+               ReferencedContainer = "container:Fredd Tips.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -47,9 +47,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "C525152C1B28D9DF00929479"
-               BuildableName = "TipsTests.xctest"
-               BlueprintName = "TipsTests"
-               ReferencedContainer = "container:Tips.xcodeproj">
+               BuildableName = "Fredd TipsTests.xctest"
+               BlueprintName = "Fredd TipsTests"
+               ReferencedContainer = "container:Fredd Tips.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -57,9 +57,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C52515171B28D9DF00929479"
-            BuildableName = "Tips.app"
-            BlueprintName = "Tips"
-            ReferencedContainer = "container:Tips.xcodeproj">
+            BuildableName = "Fredd Tips.app"
+            BlueprintName = "Fredd Tips"
+            ReferencedContainer = "container:Fredd Tips.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -77,9 +77,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C52515171B28D9DF00929479"
-            BuildableName = "Tips.app"
-            BlueprintName = "Tips"
-            ReferencedContainer = "container:Tips.xcodeproj">
+            BuildableName = "Fredd Tips.app"
+            BlueprintName = "Fredd Tips"
+            ReferencedContainer = "container:Fredd Tips.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -96,9 +96,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C52515171B28D9DF00929479"
-            BuildableName = "Tips.app"
-            BlueprintName = "Tips"
-            ReferencedContainer = "container:Tips.xcodeproj">
+            BuildableName = "Fredd Tips.app"
+            BlueprintName = "Fredd Tips"
+            ReferencedContainer = "container:Fredd Tips.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

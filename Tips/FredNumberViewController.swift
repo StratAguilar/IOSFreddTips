@@ -9,20 +9,16 @@
 import UIKit
 
 class FredNumberViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
-
-    @IBOutlet weak var friendlyLabel: UILabel!
-    @IBOutlet weak var regularLabel: UILabel!
-    @IBOutlet weak var exactLabel: UILabel!
-    @IBOutlet weak var desiredTempLabel: UILabel!
-    @IBOutlet weak var drinkRefillLabel: UILabel!
-    @IBOutlet weak var eekLabel: UILabel!
     
+   
+    @IBOutlet var collectionOfLabels: [UILabel]!
+
     var freddNumbers = [Int](0...31).reverse()
     var numberSelected : Int = 0
     let friendlyString :String = "Friendly Service!"
     let regularString : String = "Regular Checkups on Customers"
     let exactString : String = "Exact Orders Received"
-    let desiredTempString : String = "Desired Temperature of Provided"
+    let desiredTempString : String = "Desired Temperature of Food"
     let refillString : String = "Drinks Refilled Promptly"
     let eekString : String = "EEK!"
     
@@ -57,34 +53,46 @@ class FredNumberViewController: UIViewController, UIPickerViewDataSource, UIPick
         
         numberSelected = freddNumbers[row]
         var eekBool : Bool = true
-        
+        var i : Int = 0
+
         if numberSelected > 15 {
-            drinkRefillLabel.text = refillString
+            collectionOfLabels[i].text = refillString
+            i = i + 1
             numberSelected %= 16
             eekBool = false
-        } else { drinkRefillLabel.text = "" }
+        }
         if numberSelected > 7 {
-            desiredTempLabel.text = desiredTempString
+            collectionOfLabels[i].text = desiredTempString
+            i = i + 1
             numberSelected %= 8
             eekBool = false
-        } else { desiredTempLabel.text = "" }
+        }
         if numberSelected > 3 {
-            exactLabel.text = exactString
+            collectionOfLabels[i].text = exactString
+            i = i + 1
             numberSelected %= 4
             eekBool = false
-        } else { exactLabel.text = "" }
+        }
         if numberSelected > 1 {
-            regularLabel.text = regularString
+            collectionOfLabels[i].text = regularString
+            i = i + 1
             numberSelected %= 2
             eekBool = false
-        } else { regularLabel.text = "" }
+        }
         if numberSelected > 0 {
-            friendlyLabel.text = friendlyString
+            collectionOfLabels[i].text = friendlyString
+            i = i + 1
             eekBool = false
-        } else { friendlyLabel.text = ""}
+        }
         if eekBool {
-            eekLabel.text = eekString
-        } else { eekLabel.text = "" } 
+            collectionOfLabels[i].text = eekString
+            i = i + 1
+        }
+        
+        while i < collectionOfLabels.count {
+            collectionOfLabels[i].text = ""
+            i = i + 1
+        }
     }
     
     

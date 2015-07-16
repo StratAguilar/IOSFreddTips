@@ -72,9 +72,13 @@ class TipsViewController: UIViewController, ADBannerViewDelegate, UITextFieldDel
     @IBAction func roundupButton(sender: UIButton) {
         var tip : Double = 0
         var total : Double = 0
-        (tip, total) = fredd.roundUp()
+        var oldTotal : Double = 0
+        (tip, total, oldTotal) = fredd.roundUp()
         totalAmountLabel.text = NSString(format: "%.2f", total) as String
         tipAmountLabel.text = NSString(format: "%.2f", tip) as String
+        if oldTotal > 0 {
+            tipPercentageLable.text = NSString(format: "%.2f%%", tip / oldTotal * 100) as String
+        }
     }
     
     

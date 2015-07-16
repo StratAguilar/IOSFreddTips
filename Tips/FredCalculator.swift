@@ -115,13 +115,13 @@ class FredCalculator{
         return (tipTotal, tipTotal + billTotal)
     }
     
-    func roundUp() -> (tip : Double, bill : Double){
+    func roundUp() -> (tip : Double, newBill : Double, oldBill : Double){
         if billTotal > 0
         {
             var roundedBillTotal : Double = ceil(tipTotal + billTotal)
             var roundedTipTotal : Double = roundedBillTotal - billTotal
-            return (roundedTipTotal, roundedBillTotal)
+            return (roundedTipTotal, roundedBillTotal, billTotal)
         }
-        return (0.0, 0.0)
+        return (0.0, 0.0, 0.0)
     }
 }

@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Tips.xcodeproj">
+      location = "self:/Users/strataguilar/Documents/swift/Tips/Fredd Tips.xcodeproj">
    </FileRef>
 </Workspace>
