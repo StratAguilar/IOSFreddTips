@@ -109,6 +109,22 @@ class TipsViewController: UIViewController, ADBannerViewDelegate, UITextFieldDel
         
     }
     
+    func endEditing(){
+        self.view.endEditing(true)
+    }
+    
+    func textFieldShouldBeginEditing(textField: UITextField) -> Bool {
+        let keyboardDonebuttonView = UIToolbar()
+        keyboardDonebuttonView.sizeToFit()
+        
+        let item = UIBarButtonItem(title: "Done", style: UIBarButtonItemStyle.Done, target: self, action: Selector("endEditing"))
+        var toolbarButtons = [item]
+        keyboardDonebuttonView.setItems(toolbarButtons, animated: false)
+        textField.inputAccessoryView = keyboardDonebuttonView
+        
+        return true
+    }
+    
     func textFieldDidEndEditing(textField: UITextField) {
         update()
     }
