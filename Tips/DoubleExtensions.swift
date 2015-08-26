@@ -12,7 +12,7 @@ extension Double {
      static func roundToDecimalPlace(decimalValue : Double, numberOfDecimalPlaces : Double) -> Double {
         var value : Double = decimalValue
         if value != 0 {
-            var placement : Double = pow( 10.0, numberOfDecimalPlaces)
+            let placement : Double = pow(10.0, numberOfDecimalPlaces)
             value = placement * decimalValue
             value = round(value)
             value = value / placement

@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
-        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -11,154 +10,14 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="752" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jj8-Wu-Xn2">
-                    <rect key="frame" x="300" y="28" width="0.0" height="0.0"/>
-                    <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="40"/>
-                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="752" fixedFrame="YES" text="Check Amount" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d0C-2I-0u9">
-                    <rect key="frame" x="163" y="119" width="182" height="28"/>
-                    <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="15"/>
-                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" fixedFrame="YES" text="Friendly" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qi3-ke-ebT">
-                    <rect key="frame" x="163" y="208" width="106" height="24"/>
-                    <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="14"/>
-                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y3A-vS-sSs">
-                    <rect key="frame" x="404" y="208" width="46" height="24"/>
-                    <state key="normal" title="✔︎" image="check_box_blue">
-                        <color key="titleColor" red="0.97780994740000005" green="0.97646244230000001" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
-                        <color key="titleShadowColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="0.0" colorSpace="calibratedRGB"/>
-                    </state>
-                </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" fixedFrame="YES" text="Regular Checkups" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4NN-fn-Rpk">
-                    <rect key="frame" x="163" y="240" width="125" height="24"/>
-                    <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="14"/>
-                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QxR-nW-B0d">
-                    <rect key="frame" x="404" y="240" width="46" height="24"/>
-                    <state key="normal" title="✔︎" image="check_box_blue">
-                        <color key="titleColor" red="0.97780994740000005" green="0.97646244230000001" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
-                        <color key="titleShadowColor" red="0.97780994740000005" green="0.97646244230000001" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
-                    </state>
-                </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" fixedFrame="YES" text="Exact Order" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YYj-Xm-eEk">
-                    <rect key="frame" x="163" y="272" width="82" height="24"/>
-                    <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="14"/>
-                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tcm-pe-DD8">
-                    <rect key="frame" x="404" y="272" width="46" height="24"/>
-                    <state key="normal" title="✔︎" image="check_box_blue">
-                        <color key="titleColor" red="0.97780994740000005" green="0.97646244230000001" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
-                        <color key="titleShadowColor" red="0.97780994740000005" green="0.97646244230000001" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
-                    </state>
-                </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" fixedFrame="YES" text="Desired Temperature" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KGW-fv-drZ">
-                    <rect key="frame" x="163" y="304" width="144" height="24"/>
-                    <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="14"/>
-                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hzt-o7-rOx">
-                    <rect key="frame" x="404" y="304" width="46" height="24"/>
-                    <state key="normal" title="✔︎" image="check_box_blue">
-                        <color key="titleColor" red="0.97780994740000005" green="0.97646244230000001" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
-                        <color key="titleShadowColor" red="0.97780994740000005" green="0.97646244230000001" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
-                    </state>
-                </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" fixedFrame="YES" text="Drinks Refilled" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DFI-nK-yr0">
-                    <rect key="frame" x="163" y="336" width="99" height="24"/>
-                    <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="14"/>
-                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s3T-9x-XBa">
-                    <rect key="frame" x="404" y="336" width="46" height="24"/>
-                    <state key="normal" title="✔︎" image="check_box_blue">
-                        <color key="titleColor" red="0.97780994740000005" green="0.97646244230000001" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
-                        <color key="titleShadowColor" red="0.97780994740000005" green="0.97646244230000001" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
-                    </state>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mKh-vW-WOM">
-                    <rect key="frame" x="367" y="404" width="70" height="30"/>
-                    <state key="normal" title="Round Up">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="752" fixedFrame="YES" text="Tip" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jqK-x3-bgu">
-                    <rect key="frame" x="228" y="432" width="52" height="38"/>
-                    <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="22"/>
-                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QtV-kW-7Tg">
-                    <rect key="frame" x="314" y="444" width="17" height="19"/>
-                    <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="20"/>
-                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="752" fixedFrame="YES" text="0.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xek-bb-md9">
-                    <rect key="frame" x="339" y="442" width="98" height="21"/>
-                    <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="22"/>
-                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="752" fixedFrame="YES" text="Total" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XXG-1F-bjo">
-                    <rect key="frame" x="228" y="478" width="64" height="28"/>
-                    <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="22"/>
-                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kZ8-ac-MNo">
-                    <rect key="frame" x="314" y="483" width="17" height="17"/>
-                    <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="22"/>
-                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yXB-r4-qJd">
-                    <rect key="frame" x="339" y="483" width="98" height="17"/>
-                    <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="22"/>
-                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="752" fixedFrame="YES" text="Fredd Number" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CoR-vg-lui">
-                    <rect key="frame" x="163" y="514" width="162" height="26"/>
-                    <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="20"/>
-                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="752" fixedFrame="YES" text="31" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eEb-uD-aUg">
-                    <rect key="frame" x="404" y="514" width="48" height="28"/>
-                    <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="20"/>
-                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoDark" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dv7-tQ-Mdl">
-                    <rect key="frame" x="430" y="517" width="22" height="22"/>
-                </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="20%" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WJ3-S7-fqr">
-                    <rect key="frame" x="163" y="442" width="50" height="21"/>
-                    <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="10"/>
-                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                    <nil key="highlightedColor"/>
-                </label>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tips_background" translatesAutoresizingMaskIntoConstraints="NO" id="y0M-BJ-gox">
                     <rect key="frame" x="0.0" y="28" width="600" height="572"/>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FREDD TIP$" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X1p-Cr-1Np">
-                    <rect key="frame" x="161" y="28" width="279" height="75"/>
+                    <rect key="frame" x="161" y="262" width="279" height="75"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="75" id="8ka-eh-IIV"/>
-                        <constraint firstAttribute="width" constant="279" id="oer-AI-q7R"/>
+                        <constraint firstAttribute="height" constant="75" id="9Bj-fR-6HR"/>
+                        <constraint firstAttribute="width" constant="279" id="UOg-jN-d5o"/>
                     </constraints>
                     <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="40"/>
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -167,19 +26,16 @@
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="X1p-Cr-1Np" firstAttribute="centerX" secondItem="FcB-bS-1uZ" secondAttribute="centerX" id="1tl-yE-5xN"/>
-                <constraint firstItem="X1p-Cr-1Np" firstAttribute="top" secondItem="y0M-BJ-gox" secondAttribute="top" id="8OV-ES-11i"/>
-                <constraint firstItem="X1p-Cr-1Np" firstAttribute="top" secondItem="FcB-bS-1uZ" secondAttribute="top" constant="28" id="HfE-ZN-ywx"/>
-                <constraint firstItem="y0M-BJ-gox" firstAttribute="centerX" secondItem="jj8-Wu-Xn2" secondAttribute="centerX" id="Yle-Zs-dKf"/>
-                <constraint firstItem="X1p-Cr-1Np" firstAttribute="centerX" secondItem="jj8-Wu-Xn2" secondAttribute="centerX" id="eUO-RK-LVi"/>
-                <constraint firstItem="y0M-BJ-gox" firstAttribute="leading" secondItem="FcB-bS-1uZ" secondAttribute="leading" id="hkY-SN-cq9"/>
-                <constraint firstAttribute="bottom" secondItem="y0M-BJ-gox" secondAttribute="bottom" id="j7E-90-0ig"/>
-                <constraint firstItem="X1p-Cr-1Np" firstAttribute="firstBaseline" secondItem="jj8-Wu-Xn2" secondAttribute="firstBaseline" id="qK7-x5-uIV"/>
+                <constraint firstItem="X1p-Cr-1Np" firstAttribute="centerX" secondItem="FcB-bS-1uZ" secondAttribute="centerX" id="3qo-YC-Eie"/>
+                <constraint firstItem="y0M-BJ-gox" firstAttribute="top" secondItem="FcB-bS-1uZ" secondAttribute="top" constant="28" id="HR6-Vm-VIJ"/>
+                <constraint firstAttribute="bottom" secondItem="y0M-BJ-gox" secondAttribute="bottom" id="XPg-FZ-xcK"/>
+                <constraint firstItem="X1p-Cr-1Np" firstAttribute="centerX" secondItem="y0M-BJ-gox" secondAttribute="centerX" id="bSu-PW-zfF"/>
+                <constraint firstItem="X1p-Cr-1Np" firstAttribute="top" secondItem="FcB-bS-1uZ" secondAttribute="top" constant="262" id="t2i-pX-vaq"/>
+                <constraint firstItem="y0M-BJ-gox" firstAttribute="leading" secondItem="FcB-bS-1uZ" secondAttribute="leading" id="zga-xV-vRJ"/>
             </constraints>
         </view>
     </objects>
     <resources>
-        <image name="check_box_blue" width="30" height="24"/>
         <image name="tips_background" width="749" height="1336"/>
     </resources>
 </document>

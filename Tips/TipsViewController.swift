@@ -156,6 +156,41 @@ class TipsViewController: UIViewController, ADBannerViewDelegate, UITextFieldDel
         tipAmountLabel.text = NSString(format: "%.2f", tip) as String
         tipPercentageLable.text = NSString(format: "%.2f%%", tipPercent) as String
     }
+    
+    
+    @IBAction func incrementTip(sender: UIButton) {
+        var tip : Double = 0
+        var total : Double = 0
+        fredd.setBill((checkAmountTextField.text as NSString).doubleValue)
+        fredd.upTip()
+        (tip, total) = fredd.calculateTotal()
+        
+        var tipPercent : Double = fredd.getTipTotal() * 100
+        freddNumberLabel.text = fredd.calculateFreddNumber().description
+        totalAmountLabel.text = NSString(format: "%.2f", total) as String
+        tipAmountLabel.text = NSString(format: "%.2f", tip) as String
+        tipPercentageLable.text = NSString(format: "%.2f%%", tipPercent) as String
+        
+        
+    }
+    
+    
+    @IBAction func decrementTip(sender: UIButton) {
+        var tip : Double = 0
+        var total : Double = 0
+        fredd.setBill((checkAmountTextField.text as NSString).doubleValue)
+        fredd.downTip()
+        (tip, total) = fredd.calculateTotal()
+        
+        var tipPercent : Double = fredd.getTipTotal() * 100
+        freddNumberLabel.text = fredd.calculateFreddNumber().description
+        totalAmountLabel.text = NSString(format: "%.2f", total) as String
+        tipAmountLabel.text = NSString(format: "%.2f", tip) as String
+        tipPercentageLable.text = NSString(format: "%.2f%%", tipPercent) as String
+        
+    }
+    
+    
     func bannerView(banner: ADBannerView!, didFailToReceiveAdWithError error: NSError!) {
         println("Banner failed to recieve ad with error \(error) -- end ")
         if !banner.hidden
