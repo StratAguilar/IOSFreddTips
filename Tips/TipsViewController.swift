@@ -29,7 +29,10 @@ class TipsViewController: UIViewController, ADBannerViewDelegate, UITextFieldDel
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.adBanner.hidden = true
         self.adBanner.delegate = self
+        
+        self.canDisplayBannerAds = true
         
     }
     
@@ -190,6 +193,13 @@ class TipsViewController: UIViewController, ADBannerViewDelegate, UITextFieldDel
         
     }
     
+    func bannerViewActionShouldBegin(banner: ADBannerView!, willLeaveApplication willLeave: Bool) -> Bool {
+        
+        return true
+    }
+    func bannerViewDidLoadAd(banner: ADBannerView!) {
+        banner.hidden = false
+    }
     
     func bannerView(banner: ADBannerView!, didFailToReceiveAdWithError error: NSError!) {
         println("Banner failed to recieve ad with error \(error) -- end ")
@@ -197,6 +207,10 @@ class TipsViewController: UIViewController, ADBannerViewDelegate, UITextFieldDel
         {
             banner.hidden = true
         }
+        
+    }
+    
+    func bannerViewWillLoadAd(banner: ADBannerView!) {
         
     }
 
